@@ -4,7 +4,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Only Search
+        {/* <onlySearch></onlySearch>
+        <Contact></Contact> */}
       </header>
     </div>
   );
