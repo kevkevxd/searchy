@@ -1,11 +1,13 @@
-import './App.css';
+import "./App.css";
+import OnlySearch from "./OnlySearch";
+import SearchBar from "./SearchBar";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <onlySearch></onlySearch>
-        <Contact></Contact> */}
+        <OnlySearch />
+        <SearchBar />
       </header>
     </div>
   );

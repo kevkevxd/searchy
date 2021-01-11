@@ -1,24 +1,27 @@
 {
-    "profiles:" [
+    "profiles": [
         {
             "id": 1,
-            "name": "Serena",
+            "photo_url": "https://images.unsplash.com/flagged/photo-1556064127-0d64109ce9d3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTEyfHxtYWxlJTIwbW9kZWx8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", 
+            "name": "Lee",
             "location": "Orlando",
-            "cost": 15, 
+            "cost": 20, 
             "description": "Hi 22/F etc etc", 
             "profileLink": "link"
         },
         {
             "id": 2,
-            "name": "Serena",
+            "photo_url": "https://images.unsplash.com/photo-1525287957446-e64af7954611?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODl8fGJpa2luaXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", 
+            "name": "Gian",
             "location": "Orlando",
             "cost": 15, 
-            "description": "Hi 22/F etc etc", 
+            "description": "", 
             "profileLink": "link"
         },
         {
             "id": 3,
-            "name": "Serena",
+            "photo_url": "https://images.unsplash.com/photo-1566226751542-a32977fdb3f3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTM4fHxiaWtpbml8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", 
+            "name": "Houcine",
             "location": "Orlando",
             "cost": 15, 
             "description": "Hi 22/F etc etc", 
@@ -26,7 +29,8 @@
         },
         {
             "id": 4,
-            "name": "Serena",
+            "photo_url": "https://images.unsplash.com/photo-1527189919029-aeb3d997547d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTM5fHxiaWtpbml8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", 
+            "name": "Nikki",
             "location": "Orlando",
             "cost": 15, 
             "description": "Hi 22/F etc etc", 
@@ -34,7 +38,8 @@
         },
         {
             "id": 5,
-            "name": "Serena",
+            "photo_url": "https://images.unsplash.com/photo-1563821890467-e862245ee6dd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTc5fHxiaWtpbml8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", 
+            "name": "Breezy",
             "location": "Orlando",
             "cost": 15, 
             "description": "Hi 22/F etc etc", 
@@ -42,7 +47,8 @@
         },
         {
             "id": 6,
-            "name": "Serena",
+            "photo_url": "https://images.unsplash.com/photo-1591901559829-ce65d7eaca0a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTg2fHxiaWtpbml8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", 
+            "name": "Michelle",
             "location": "Orlando",
             "cost": 15, 
             "description": "Hi 22/F etc etc", 
@@ -50,7 +56,8 @@
         },
         {
             "id": 7,
-            "name": "Serena",
+            "photo_url": "https://images.unsplash.com/photo-1542355534-c88963333ebf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fG1hbGUlMjBtb2RlbHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", 
+            "name": "Dave",
             "location": "Orlando",
             "cost": 15, 
             "description": "Hi 22/F etc etc", 
@@ -58,15 +65,17 @@
         },
         {
             "id": 8,
-            "name": "Serena",
-            "location": "Orlando",
-            "cost": 15, 
-            "description": "Hi 22/F etc etc", 
+            "photo_url": "https://images.unsplash.com/photo-1528150331097-ddb52e7711df?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODR8fGJpa2luaXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", 
+            "name": "Steve",
+            "location": "California",
+            "cost": 12, 
+            "description": "Hey There, 27/M I love surfing and outdoor activities", 
             "profileLink": "link"
         },
         {
             "id": 9,
-            "name": "Serena",
+            "photo_url": "https://images.unsplash.com/photo-1517760307355-e48f68215de6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzV8fGJpa2luaXxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60", 
+            "name": "Sally",
             "location": "Orlando",
             "cost": 15, 
             "description": "Meowdy", 
