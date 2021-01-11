@@ -27,9 +27,9 @@ const OnlySearch = (props) => {
             cy="20.5417"
             r="3.54167"
             stroke="white"
-            stroke-width="2"
+            strokeWidth="2"
           />
-          <path d="M16.375 23.375L18.5 25.5" stroke="white" stroke-width="2" />
+          <path d="M16.375 23.375L18.5 25.5" stroke="white" strokeWidth="2" />
         </svg>
         ;
       </button>
