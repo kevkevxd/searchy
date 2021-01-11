@@ -6,6 +6,7 @@ import SearchResult from "./searchResult";
 class Main extends React.Component {
   state = {
     profiles: [],
+    searchResult: [],
   };
 
   componentDidMount() {
