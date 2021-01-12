@@ -1,6 +1,7 @@
 import React from "react";
 import OnlySearchLogo from "./OnlySearchLogo";
 import SearchBar from "../SearchBar";
+import SearchForm from "../SearchBar/SearchForm.js";
 import Profile from "./profile.js";
 import ContactSVG from "./contactSVG.js";
 import "./index.css";
@@ -37,8 +38,8 @@ class OnlySearch extends React.Component {
     ));
     console.log("state:", this.state);
     return (
-      <div className="App">
-        <header className="App-header">
+      <div>
+        <div className="Only-Search">
           <OnlySearchLogo />
           <ContactSVG />
           <SearchBar
@@ -46,7 +47,10 @@ class OnlySearch extends React.Component {
             inputSearch={this.inputSearch}
           />
           {this.state.searchValue === "" ? profiles : searchResult}
-        </header>
+        </div>
+        <div className="search-form">
+          <SearchForm />
+        </div>
       </div>
     );
   }
