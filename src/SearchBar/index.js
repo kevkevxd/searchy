@@ -1,14 +1,19 @@
 import React from "react";
+import "antd/dist/antd.css";
+import { Input, Space } from "antd";
+import { AudioOutlined } from "@ant-design/icons";
+
+const { Search } = Input;
 
 const SearchBar = (props) => {
   return (
-    <form className="search-bar">
-      <input
+    <div className="search-bar">
+      <Search
         placeholder="search"
         value={props.searchValue}
         onChange={props.inputSearch}
       />
-    </form>
+    </div>
   );
 };
 
