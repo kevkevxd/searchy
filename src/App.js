@@ -1,11 +1,11 @@
 import "./App.css";
-import Main from "./OnlySearch/main.js";
+import OnlySearch from "./OnlySearch/index.js";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Main />
+        <OnlySearch />
       </header>
     </div>
   );
