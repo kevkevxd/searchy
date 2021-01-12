@@ -2,8 +2,8 @@ import React from "react";
 
 const ContactSVG = (props) => {
   return (
-    <div className="search-logo">
-      <button>
+    <div>
+      <button className="contact-logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="48"

@@ -1,10 +1,9 @@
 import React from "react";
-// import SearchSVG from "../assets/searchSVG.js";
 
 const OnlySearchLogo = (props) => {
   return (
     <div className="search-logo">
-      <button>
+      <button className="search-button">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="156"

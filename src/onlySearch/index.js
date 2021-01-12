@@ -3,6 +3,7 @@ import OnlySearchLogo from "./OnlySearchLogo";
 import SearchBar from "../SearchBar";
 import Profile from "./profile.js";
 import ContactSVG from "./contactSVG.js";
+import "./index.css";
 
 class OnlySearch extends React.Component {
   state = {
