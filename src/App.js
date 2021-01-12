@@ -1,5 +1,5 @@
 import "./App.css";
-import Main from "./main.js";
+import Main from "./OnlySearch/main.js";
 
 function App() {
   return (

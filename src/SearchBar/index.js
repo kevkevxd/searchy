@@ -1,17 +1,13 @@
 import React from "react";
 
 const SearchBar = (props) => {
-  // onChange = (e) => {
-  //   this.props.search(e.target.value);
-  // };
-
   return (
     <form className="search-bar">
       <input
-        placeholder="only-search"
-        // value={this.props.searchValue}
-        // onChange={this.onChange}
-      ></input>
+        placeholder="search"
+        value={props.searchValue}
+        onChange={props.inputSearch}
+      />
     </form>
   );
 };
