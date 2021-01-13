@@ -1,6 +1,6 @@
 import React from "react";
 import "antd/dist/antd.css";
-import { Form, Select, Switch, Slider, Col, Row, Checkbox } from "antd";
+import { Form, Select, Slider } from "antd";
 const { Option } = Select;
 
 const SearchForm = (props) => {
@@ -64,7 +64,7 @@ const SearchForm = (props) => {
           <Option value="Sub-Saharan Africa">Sub-Saharan Africa</Option>
         </Select>
       </Form.Item>
-      Sort by Age Range
+      Sort by Age
       <Form.Item name="age-slider">
         <br></br>
         <Slider
@@ -82,9 +82,6 @@ const SearchForm = (props) => {
             100: "",
           }}
         />
-      </Form.Item>
-      <Form.Item name="Dark-Mode" label="Dark Mode" valuePropName="checked">
-        <Switch />
       </Form.Item>
     </Form>
   );
