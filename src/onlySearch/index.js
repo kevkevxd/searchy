@@ -5,12 +5,14 @@ import SearchForm from "../SearchBar/SearchForm.js";
 import Profile from "./profile.js";
 import ContactSVG from "./contactSVG.js";
 import "./index.css";
+import DarkMode from "./darkmode.js";
 
 class OnlySearch extends React.Component {
   state = {
     profiles: [],
     searchResult: [],
     searchValue: "",
+    darkWrapper: "",
   };
 
   componentDidMount() {
@@ -29,6 +31,23 @@ class OnlySearch extends React.Component {
     this.setState({ searchValue: e.target.value, searchResult });
   };
 
+  filterAfterSearch = (e) => {
+    //if searchResult is empty, start with profiles state
+    // if (this.state.searchValue === ""){
+    //   const profileArray = this.state.profiles
+    //     profileArray.filter((profile)=> profile.)
+    // }
+    //takes searchresult state and filters through it
+    //includes an array of everything in the range
+    //
+  };
+
+  darkMode = (isTicked) => {
+    isTicked
+      ? this.setState({ darkWrapper: "dark-mode" })
+      : this.setState({ darkWrapper: "" });
+  };
+
   render() {
     const profiles = this.state.profiles.map((profile) => (
       <Profile key={profile.id} profile={profile} />
@@ -38,8 +57,8 @@ class OnlySearch extends React.Component {
     ));
     console.log("state:", this.state);
     return (
-      <div>
-        <div className="Only-Search">
+      <div className={this.state.darkWrapper}>
+        <div className="only-search" {...this.state.darkModeIsOn}>
           <OnlySearchLogo />
           <ContactSVG />
           <SearchBar
@@ -50,6 +69,7 @@ class OnlySearch extends React.Component {
         </div>
         <div className="search-form">
           <SearchForm />
+          <DarkMode darkMode={this.darkMode} />
         </div>
       </div>
     );

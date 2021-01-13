@@ -1,4 +1,3 @@
-import "./App.css";
 import OnlySearch from "./OnlySearch/index.js";
 
 function App() {
