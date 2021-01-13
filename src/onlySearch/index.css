@@ -1,5 +1,4 @@
-.dark-mode,
-.ant-row ant-form-item .body {
+.dark-mode {
   margin: 0px;
   color: white;
   background: #111d2c;
@@ -66,11 +65,20 @@
   top: 15%;
   left: 5%;
 }
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background-color: rgba(0, 204, 240, 0);
+}
 
-.search-bar {
+.search-bar-wrapper {
   padding-top: 3%;
   margin-bottom: 5%;
 }
+.ant-input {
+  background-color: rgba(0, 204, 240, 0);
+}
+
+/* .search-bar-wrapper > .ant-input {
+} */
 
 .profile-link {
   -webkit-border-radius: 16px;

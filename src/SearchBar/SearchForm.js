@@ -4,8 +4,9 @@ import { Form, Select, Slider } from "antd";
 const { Option } = Select;
 
 const SearchForm = (props) => {
+  const textWrapColor = props.isDark ? "white" : "black";
   return (
-    <Form size="small">
+    <Form size="small" style={{ color: textWrapColor }}>
       <Form.Item
         name="Gender"
         // label="Gender"

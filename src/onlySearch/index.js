@@ -13,6 +13,7 @@ class OnlySearch extends React.Component {
     searchResult: [],
     searchValue: "",
     darkWrapper: "",
+    isDark: false,
   };
 
   componentDidMount() {
@@ -44,8 +45,8 @@ class OnlySearch extends React.Component {
 
   darkMode = (isTicked) => {
     isTicked
-      ? this.setState({ darkWrapper: "dark-mode" })
-      : this.setState({ darkWrapper: "" });
+      ? this.setState({ darkWrapper: "dark-mode", isDark: true })
+      : this.setState({ darkWrapper: "", isDark: false });
   };
 
   render() {
@@ -55,7 +56,7 @@ class OnlySearch extends React.Component {
     const searchResult = this.state.searchResult.map((profile) => (
       <Profile key={profile.id} profile={profile} />
     ));
-    console.log("state:", this.state);
+
     return (
       <div className={this.state.darkWrapper}>
         <div className="only-search">
@@ -67,8 +68,8 @@ class OnlySearch extends React.Component {
           />
           {this.state.searchValue === "" ? profiles : searchResult}
         </div>
-        <div className="search-form">
-          <SearchForm />
+        <div className="search-form" style={{}}>
+          <SearchForm isDark={this.state.isDark} />
           <DarkMode darkMode={this.darkMode} />
         </div>
       </div>

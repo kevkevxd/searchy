@@ -6,7 +6,7 @@ const { Search } = Input;
 
 const SearchBar = (props) => {
   return (
-    <div className="search-bar">
+    <div className="search-bar-wrapper">
       <Search
         placeholder="Find your new favorite creators. "
         value={props.searchValue}
