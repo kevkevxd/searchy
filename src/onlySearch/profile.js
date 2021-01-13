@@ -9,7 +9,7 @@ const Profile = (props) => {
         {props.profile.location} ${props.profile.cost}
       </h4>
       <p>{props.profile.description}</p>
-      <button>saveIconSVG</button>
+      <button className="profile-link">Open OnlyFans</button>
     </div>
   );
 };

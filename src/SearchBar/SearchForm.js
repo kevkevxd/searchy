@@ -4,12 +4,6 @@ import { Form, Select, Switch, Slider, Col, Row, Checkbox } from "antd";
 const { Option } = Select;
 
 const SearchForm = (props) => {
-  const onFinish = (values) => {
-    console.log("Received values of form: ", values);
-  };
-  // const onFormLayoutChange = ({ size }) => {
-  //   setComponentSize(size);
-  // };
   return (
     <Form size="small">
       <Form.Item
