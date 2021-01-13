@@ -1,10 +1,11 @@
 import React from "react";
 
 const Profile = (props) => {
+  const nameFont = props.isDark ? "white" : "black";
   return (
-    <div className="profile" style={{ fontColor: "#000000" }}>
+    <div className="profile">
       <img alt={props.profile.name} src={props.profile.photo_url} />
-      <h3>{props.profile.name}</h3>
+      <h3 style={{ color: nameFont }}>{props.profile.name}</h3>
       <h4>
         {props.profile.location} ${props.profile.cost}
       </h4>

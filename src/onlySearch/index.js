@@ -51,10 +51,10 @@ class OnlySearch extends React.Component {
 
   render() {
     const profiles = this.state.profiles.map((profile) => (
-      <Profile key={profile.id} profile={profile} />
+      <Profile key={profile.id} profile={profile} isDark={this.state.isDark} />
     ));
     const searchResult = this.state.searchResult.map((profile) => (
-      <Profile key={profile.id} profile={profile} />
+      <Profile key={profile.id} profile={profile} isDark={this.state.isDark} />
     ));
 
     return (
@@ -68,7 +68,7 @@ class OnlySearch extends React.Component {
           />
           {this.state.searchValue === "" ? profiles : searchResult}
         </div>
-        <div className="search-form" style={{}}>
+        <div className="search-form">
           <SearchForm isDark={this.state.isDark} />
           <DarkMode darkMode={this.darkMode} />
         </div>
