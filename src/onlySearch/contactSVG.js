@@ -19,7 +19,6 @@ const ContactSVG = (props) => {
             fill="white"
           />
         </svg>
-        ;
       </button>
     </div>
   );

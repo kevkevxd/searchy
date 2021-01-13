@@ -58,8 +58,8 @@ class OnlySearch extends React.Component {
     console.log("state:", this.state);
     return (
       <div className={this.state.darkWrapper}>
-        <div className="only-search" {...this.state.darkModeIsOn}>
-          <OnlySearchLogo />
+        <div className="only-search">
+          <OnlySearchLogo darkMode={this.state.darkWrapper} />
           <ContactSVG />
           <SearchBar
             searchValue={this.state.searchValue}
