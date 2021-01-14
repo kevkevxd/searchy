@@ -68,7 +68,6 @@ class OnlySearch extends React.Component {
             searchValue={this.state.searchValue}
             inputSearch={this.inputSearch}
           />
-          {/* {this.state.searchResult === [] ? profiles : searchResult} */}
           {searchResult}
         </div>
         <div className="search-form">
