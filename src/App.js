@@ -1,4 +1,4 @@
-import OnlySearch from "./OnlySearch/index.js";
+import OnlySearch from "../src/OnlySearch/index.js";
 
 function App() {
   return (
