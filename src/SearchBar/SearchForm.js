@@ -65,6 +65,7 @@ const SearchForm = (props) => {
             0: "",
             100: "",
           }}
+          defaultValue={[50]}
         />
       </Form.Item>
       Dark Mode

@@ -32,7 +32,8 @@
 }
 
 .profile h3 {
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: -1%;
 }
 .profile h4 {
   color: grey;
@@ -62,9 +63,9 @@
 }
 
 .search-form {
-  position: absolute;
+  position: fixed;
   width: 15%;
-  top: 15%;
+  top: 10%;
   left: 5%;
 }
 .ant-select:not(.ant-select-customize-input) .ant-select-selector {
@@ -84,22 +85,22 @@
 
 /* font-family: Brush Script MT; */
 .profile-link-button {
-  height: 20px;
+  /* height: 20px; */
   line-height: 2px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   border-radius: 16px;
   color: #ffffff;
-  font-family: "Cormorant Garamond", serif;
+  /* font-family: "Cormorant Garamond", serif; */
   width: 165px;
-  font-size: 23px;
+  font-size: 16px;
   font-weight: 100;
   padding: 14px;
   background-color: #00aff0;
-  text-decoration: none;
-  display: inline-block;
+  /* text-decoration: none; */
+  /* display: inline-block; */
   cursor: pointer;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .profile-link-button:hover {
