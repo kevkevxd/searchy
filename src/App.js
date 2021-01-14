@@ -1,4 +1,4 @@
-import OnlySearch from "./onlySearch";
+import OnlySearch from "./OnlySearch";
 
 function App() {
   return (
