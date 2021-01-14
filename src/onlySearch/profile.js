@@ -10,7 +10,7 @@ const Profile = (props) => {
         {props.profile.location} ${props.profile.cost}
       </h4>
       <p>{props.profile.description}</p>
-      <button className="profile-link">Open OnlyFans</button>
+      <button className="profile-link-button">Open OnlyFans</button>
     </div>
   );
 };

@@ -13,34 +13,39 @@ class OnlySearch extends React.Component {
     searchResult: [],
     searchValue: "",
     darkWrapper: "",
+    sliderValue: 0 || Number.POSITIVE_INFINITY,
     isDark: false,
   };
 
   componentDidMount() {
-    fetch("http://localhost:3000/profiles")
+    fetch("http://localhost:3001/profiles")
       .then((res) => res.json())
       .then((data) => this.setState({ profiles: data }));
   }
-
-  inputSearch = (e) => {
-    const searchResult = this.state.profiles.filter(
-      (prof) =>
-        prof.name.toLowerCase().includes(e.target.value.toLowerCase()) ||
-        prof.location.toLowerCase().includes(e.target.value.toLowerCase()) ||
-        prof.description.toLowerCase().includes(e.target.value.toLowerCase())
-    );
-    this.setState({ searchValue: e.target.value, searchResult });
+  filters = () => {
+    let searchResult = this.state.profiles
+      .filter((user) => user.cost <= this.state.sliderValue)
+      .filter(
+        (user) =>
+          user.name
+            .toLowerCase()
+            .includes(this.state.searchValue.toLowerCase()) ||
+          user.location
+            .toLowerCase()
+            .includes(this.state.searchValue.toLowerCase()) ||
+          user.description
+            .toLowerCase()
+            .includes(this.state.searchValue.toLowerCase())
+      );
+    return searchResult;
   };
 
-  filterAfterSearch = (e) => {
-    //if searchResult is empty, start with profiles state
-    // if (this.state.searchValue === ""){
-    //   const profileArray = this.state.profiles
-    //     profileArray.filter((profile)=> profile.)
-    // }
-    //takes searchresult state and filters through it
-    //includes an array of everything in the range
-    //
+  sliderValue = (value) => {
+    this.setState({ sliderValue: value });
+  };
+
+  inputSearch = (e) => {
+    this.setState({ searchValue: e.target.value });
   };
 
   darkMode = (isTicked) => {
@@ -50,10 +55,7 @@ class OnlySearch extends React.Component {
   };
 
   render() {
-    const profiles = this.state.profiles.map((profile) => (
-      <Profile key={profile.id} profile={profile} isDark={this.state.isDark} />
-    ));
-    const searchResult = this.state.searchResult.map((profile) => (
+    const searchResult = this.filters().map((profile) => (
       <Profile key={profile.id} profile={profile} isDark={this.state.isDark} />
     ));
 
@@ -66,10 +68,14 @@ class OnlySearch extends React.Component {
             searchValue={this.state.searchValue}
             inputSearch={this.inputSearch}
           />
-          {this.state.searchValue === "" ? profiles : searchResult}
+          {/* {this.state.searchResult === [] ? profiles : searchResult} */}
+          {searchResult}
         </div>
         <div className="search-form">
-          <SearchForm isDark={this.state.isDark} />
+          <SearchForm
+            isDark={this.state.isDark}
+            sliderValue={this.sliderValue}
+          />
           <DarkMode darkMode={this.darkMode} />
         </div>
       </div>

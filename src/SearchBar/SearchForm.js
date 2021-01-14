@@ -9,7 +9,6 @@ const SearchForm = (props) => {
     <Form size="small" style={{ color: textWrapColor }}>
       <Form.Item
         name="Gender"
-        // label="Gender"
         rules={[
           {
             required: false,
@@ -18,24 +17,14 @@ const SearchForm = (props) => {
           },
         ]}
       >
-        <Select mode="multiple" placeholder="Sort By Gender">
+        <Select mode="multiple" placeholder="Filter By Gender">
           <Option value="male">Male</Option>
           <Option value="female">Female</Option>
           <Option value="trans">Trans</Option>
           <Option value="non-binary">Non-binary</Option>
         </Select>
       </Form.Item>
-      <Form.Item
-        name="Sexual Preference"
-        // label="Sexual Preference"
-        rules={[
-          {
-            required: false,
-            message: "Select Gender!",
-            type: "array",
-          },
-        ]}
-      >
+      <Form.Item name="Sexual Preference">
         <Select mode="multiple" placeholder="Creator's Preferred Content">
           <Option value="Solo">Solo</Option>
           <Option value="Straight">Straight</Option>
@@ -47,13 +36,6 @@ const SearchForm = (props) => {
       <Form.Item
         name="Region"
         // label="Region"
-        rules={[
-          {
-            required: false,
-            message: "Select Gender!",
-            type: "array",
-          },
-        ]}
       >
         <Select mode="multiple" placeholder="Creator's Region">
           <Option value="North America">North America</Option>
@@ -65,7 +47,7 @@ const SearchForm = (props) => {
           <Option value="Sub-Saharan Africa">Sub-Saharan Africa</Option>
         </Select>
       </Form.Item>
-      Sort by Age
+      Filter by Age
       <Form.Item name="age-slider">
         <br></br>
         <Slider
@@ -78,12 +60,14 @@ const SearchForm = (props) => {
       Subscription Cost
       <Form.Item name="sub-slider">
         <Slider
+          onChange={props.sliderValue}
           marks={{
             0: "",
             100: "",
           }}
         />
       </Form.Item>
+      Dark Mode
     </Form>
   );
 };

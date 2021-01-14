@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Dancing+Script&display=swap");
 .dark-mode {
   margin: 0px;
   color: white;
@@ -80,16 +82,17 @@
 /* .search-bar-wrapper > .ant-input {
 } */
 
-.profile-link {
+/* font-family: Brush Script MT; */
+.profile-link-button {
+  height: 20px;
+  line-height: 2px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   border-radius: 16px;
-  height: 2px;
-  line-height: 2px;
   color: #ffffff;
-  font-family: Brush Script MT;
+  font-family: "Cormorant Garamond", serif;
   width: 165px;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 100;
   padding: 14px;
   background-color: #00aff0;
@@ -99,7 +102,7 @@
   text-align: center;
 }
 
-.profile-link:hover {
+.profile-link-button:hover {
   border: solid #337fed 1px;
   background: #1e62d0;
   background-image: -webkit-linear-gradient(top, #1e62d0, #3d94f6);
