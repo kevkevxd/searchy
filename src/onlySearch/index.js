@@ -18,7 +18,7 @@ class OnlySearch extends React.Component {
   };
 
   componentDidMount() {
-    fetch("http://localhost:3001/profiles")
+    fetch("https://my-json-server.typicode.com/kevkevxd/searchy-json/profiles")
       .then((res) => res.json())
       .then((data) => this.setState({ profiles: data }));
   }
